@@ -13,7 +13,7 @@ form{
     flex-direction: column;
     margin: 5% auto;
     gap: 5px;
-    width: 25%;
+    width: 300px;
 }
 label{
     font-size: 14px;
@@ -38,11 +38,11 @@ form button{
     cursor: pointer;
 }
 img{
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
     margin: 0 auto;
 
-    margin-bottom: 55px;
+    margin-bottom: 25px;
 }
 form button:hover{
         background-color: #48b6ff;
@@ -64,4 +64,18 @@ form input:focus{
 a, h3{
   font-size: 14px;
   color: #ffffff;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 21px;
+    font-family: monospace;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    form{
+        margin-top: 50%;
+    }
+
 }

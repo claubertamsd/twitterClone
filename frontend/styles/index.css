@@ -31,10 +31,23 @@
     height: 35px;
 
 }
+.sidebar ul a:hover{
+
+    transition: 0.2s;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    
+    color: #1D9BF0;
+}
 .sidebar .logo{
     margin-left: -10px;
     height: 50px;
     width: 50px;
+    
+}
+.logo:hover{
+    fill: #ffffff;
 }
 .sidebar img{
     height: 24px;
@@ -65,6 +78,11 @@
     
     outline: none;
 }
+
+textarea:focus{
+ border: 1px solid #1D9BF0;
+}
+
 
 .post{ 
     display: flex;
@@ -141,6 +159,7 @@ aside{
 }
 section{
     margin-bottom: 15px;
+   
 }
 .feed{
     min-height: 70px;
@@ -149,6 +168,7 @@ section{
     background-color: #202327;
     border-radius: 10px;
     padding: 20px;
+   
 }
 
 .text-feed{
@@ -208,4 +228,5 @@ span{
         display: none;
       
     }
+
 }

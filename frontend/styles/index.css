@@ -28,27 +28,27 @@
     gap: 20px;
     text-decoration: none;
     color: white;
-    height: 35px;
 
 }
 .sidebar ul a:hover{
-
     transition: 0.2s;
     border-radius: 10px;
-    padding: 10px;
-    width: 150px;
+    transform: translateX(15px);
     
     color: #1D9BF0;
+}
+img:hover{
+    fill: #1D9BF0;
+}
+.sidebarContainer{
+ margin-top: 10px;
 }
 .sidebar .logo{
     margin-left: -10px;
     height: 50px;
     width: 50px;
-    
 }
-.logo:hover{
-    fill: #ffffff;
-}
+
 .sidebar img{
     height: 24px;
     width: 24px;
@@ -56,8 +56,6 @@
 .master{
     display: flex;
     flex-direction: column;
-    
-  
 }
 .master h1{
     margin-top: 30px;
@@ -74,15 +72,13 @@
     background-color: #202020;
     resize: none;
     color: gainsboro;
-    border-radius: 20px;
-    
+    border-radius: 20px;  
     outline: none;
 }
 
 textarea:focus{
  border: 1px solid #1D9BF0;
 }
-
 
 .post{ 
     display: flex;
@@ -107,15 +103,13 @@ textarea:focus{
 }
 
 aside{
+    height: max-content;
     display: flex;
     margin-top: 50px;
     flex-direction: column;
     background-color: #202327;
     border-radius: 20px;
     padding: 15px;
-
-    max-height: 300px;
-
 }
 
 .title-aside, .title-feed{
@@ -161,6 +155,27 @@ section{
     margin-bottom: 15px;
    
 }
+.postContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+   
+}
+.postContainer .postImg img {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
+.postImg{
+    margin: -5px 0px 30px 0px;
+    
+    height: 200px;
+    align-items: center;
+    max-width: max-content;
+}
+
 .feed{
     min-height: 70px;
     max-height: auto;
@@ -168,26 +183,48 @@ section{
     background-color: #202327;
     border-radius: 10px;
     padding: 20px;
-   
 }
-
-.text-feed{
-
+.header{
     display: flex;
+    gap:15px;
+}
+.header img{
+    height: 50px;
+}
+.dateContainer{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.dateContainer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #707070;
+
+}
+.text-feed{
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 10px;   
 }
-.feed p {
-    margin-left: 59px;
+.dateContainer p {
     text-align: left;
     color: #ffffff;
-    margin-bottom: 20px;
-    margin-top: -15px;
+    margin: -15px 0px 20px 0px;
+}
+.postP p{
+    margin: -15px 0px 20px 60px;
+    color: #ffffff;
 }
 .feed button{
     border:none;
+    cursor: pointer;
     background-color: transparent;
 }
+
+
 .buttons{
     display: flex;
     align-items: center;
@@ -209,11 +246,23 @@ span{
       width: 100%;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
+      justify-content:center;
+      gap: 28px;
     }
+    .sidebar ul a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        gap: 5px;
+        
+      }
+      .sidebar ul a:hover {
+        transform: none;
+       
+      }
 
     .master{
-        width: 63%;
+        width: 85%;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
@@ -224,7 +273,7 @@ span{
     .feed{
         width: 100%;
     }
-    aside{
+    aside, .logo{
         display: none;
       
     }

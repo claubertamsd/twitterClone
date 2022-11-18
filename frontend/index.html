@@ -7,26 +7,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
-    <link rel="shortcut icon" href="/assets/logo.png">
+    <link rel="shortcut icon" href="/frontend/assets/logo.png">
 
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/frontend/styles/index.css">
 </head>
 <body id="container">
   
     <nav class="sidebar">
       <img class="logo" src="assets/Logo.svg" alt="Logotipo Mentwitter" />
-        <ul>
-           <a href=""> <img src="assets/Home-Fill.svg">Home</a>
-        </ul>
-        <ul>
+      <div class="sidebarContainer">
+      <ul>
+         <a href=""> <img src="assets/Home-Fill.svg">Home</a>
+      </ul>
+      </div>
+      <div class="sidebarContainer">
+         <ul>
             <a href=""> <img src="assets/Explore.svg">Explore</a>
          </ul>
+      </div>
+      <div class="sidebarContainer">
          <ul>
             <a href=""><img src="assets/Notifications.svg">Notifications</a>
          </ul>
+      </div>
+      <div class="sidebarContainer">
          <ul>
             <a href=""><img src="assets/Messages.svg">Messages</a>
          </ul>
+      </div>
     </nav>
 
    <main class="master">
@@ -40,83 +48,35 @@
 
      <section class="feed">    
       <div class="text-feed">
-         <img src="/assets/Profile-Photo.png" alt="foto de perfil">
-         <h2 class="name-feed">Claubert Vinicius</h1>
+         <div class="header">
+            <img src="/frontend/assets/Profile-Photo.png" alt="foto de perfil">
+            <div class="dateContainer">
+                  <h2 class="name-feed">Claubert Vinicius</h1>
+                  <p class="data">21/05/2023</p>
+               </div>
          </div>
-         <p>Assunto que será exibido no post, ou seja o tweet</p>
+            <div class="postContainer">
+               <img class="postImg" src="https://blockchainlogistics.files.wordpress.com/2021/09/chip.jpg?w=1088" alt="post">
+            </div>
+            <div class="postP">
+               <p>Assunto que será exibido no post, ou seja o tweet</p>
+            </div>
+         </div>
          <div class="buttons">
-             <button><img src="/assets/React.svg" alt="curtir"></button>
+             <button><img src="/frontend/assets/React.svg" alt="curtir"></button>
              <span>1 curtida</span>
         </div>
      </section>
-
-     <section class="feed">    
-      <div class="text-feed">
-         <img src="/assets/Profile-Photo.png" alt="foto de perfil">
-         <h2 class="name-feed">Claubert Vinicius</h1>
-         </div>
-         <p>Assunto que será exibido no post, ou seja o tweet</p>
-         <div class="buttons">
-             <button><img src="/assets/React.svg" alt="curtir"></button>
-             <span>1 curtida</span>
-        </div>
-     </section>
-
-
-     <section class="feed">    
-      <div class="text-feed">
-         <img src="/assets/Profile-Photo.png" alt="foto de perfil">
-         <h2 class="name-feed">Claubert Vinicius</h1>
-         </div>
-         <p>Assunto que será exibido no post, ou seja o tweet</p>
-         <div class="buttons">
-             <button><img src="/assets/React.svg" alt="curtir"></button>
-             <span>1 curtida</span>
-        </div>
-     </section>
-
-
-     <section class="feed">    
-      <div class="text-feed">
-         <img src="/assets/Profile-Photo.png" alt="foto de perfil">
-         <h2 class="name-feed">Claubert Vinicius</h1>
-         </div>
-         <p>Assunto que será exibido no post, ou seja o tweet</p>
-         <div class="buttons">
-             <button><img src="/assets/React.svg" alt="curtir"></button>
-             <span>1 curtida</span>
-        </div>
-   </section>
-
-     
    </main>
 
    <aside>
       <h1 class="title-aside">Who to follow</h1>
 
       <section class="followers">
-        <img src="/assets/Profile-Photo.png" alt="foto">
+        <img src="/frontend/assets/Profile-Photo.png" alt="foto">
         <h2>Claubert Vinicius</h2>
         <button>Follow</button>
       </section>
-
-      <section class="followers">
-         <img src="/assets/Profile-Photo.png" alt="foto">
-         <h2>Claubert Vinicius</h2>
-         <button>Follow</button>
-       </section>
-
-       <section class="followers">
-         <img src="/assets/Profile-Photo.png" alt="foto">
-         <h2>Claubert Vinicius</h2>
-         <button>Follow</button>
-       </section>
-
-       <section class="followers">
-         <img src="/assets/Profile-Photo.png" alt="foto">
-         <h2>Claubert Vinicius</h2>
-         <button>Follow</button>
-       </section>
      </aside>
     
 </body>

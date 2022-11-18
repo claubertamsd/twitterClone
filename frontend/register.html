@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter - Register</title>
-    <link rel="stylesheet" href="/styles/register.css">
-    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/frontend/styles/register.css">
+    <link rel="shortcut icon" href="/frontend/assets/logo.png" type="image/x-icon">
 </head>
 <body>
+    <div class="container">
     <form>
-        <fieldset>
-            <img src="/assets/logo.png" alt="Logotipo">
-           <h1>Cadastre-se</h1>
+        <div class="formContainer">
+        <img src="assets/logo.png" alt="Logotipo">
+        <h1>Cadastre-se</h1>
         <label for="">Nome</label>
         <input type="text" placeholder="Nome">
 
@@ -28,10 +29,13 @@
         <label for="">Confirme sua senha</label>
         <input type="text" placeholder="Confirmação senha">
         <div class="buttons">
-           <a href="/login.html">Voltar</a>
+            <div class="ancoras">
+                <a href="/frontend/login.html">Voltar</a>
+            </div>
            <button>Register</button>
        </div>
-       </fieldset>
+       </div>
     </form>
+</div>
 </body>
 </html>

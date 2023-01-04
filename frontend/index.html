@@ -1,83 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter</title>
-    <link rel="shortcut icon" href="/frontend/assets/logo.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <title>Twitter - Clone</title>
 
-    <link rel="stylesheet" href="/frontend/styles/index.css">
+   <link rel="stylesheet" href="styles/global.css">
+   <link rel="stylesheet" href="styles/sidebar.css">
+   <link rel="stylesheet" href="main.css">
+
+   <link rel="shortcut icon" href="/frontend/styles/Twitter.svg" type="image/x-icon">
 </head>
-<body id="container">
-  
-    <nav class="sidebar">
-      <img class="logo" src="assets/Logo.svg" alt="Logotipo Mentwitter" />
-      <div class="sidebarContainer">
-      <ul>
-         <a href=""> <img src="assets/Home-Fill.svg">Home</a>
-      </ul>
-      </div>
-      <div class="sidebarContainer">
-         <ul>
-            <a href=""> <img src="assets/Explore.svg">Explore</a>
-         </ul>
-      </div>
-      <div class="sidebarContainer">
-         <ul>
-            <a href=""><img src="assets/Notifications.svg">Notifications</a>
-         </ul>
-      </div>
-      <div class="sidebarContainer">
-         <ul>
-            <a href=""><img src="assets/Messages.svg">Messages</a>
-         </ul>
-      </div>
-    </nav>
+<body>
+   <aside class="sidebar">
+         <img src="./styles/Twitter.svg" alt="Foto do perfil">
+      <nav class="navigation">
+         <button> 
+            <span class="button-navigation">
+               <i class="material-symbols-outlined">Home</i>
+               <span>Home</span> 
+            </span>
+         </button>
+         <button> 
+            <span>
+               <i class="material-symbols-outlined">Tag</i>
+               <span>Explore</span>
+            </span>
+         </button>
+         <button> 
+            <span>
+               <i class="material-symbols-outlined">Notifications</i>
+              <span>Notificações</span> 
+            </span>
+         </button>
+         <button> 
+            <span>
+               <i class="material-symbols-outlined">Mail</i>
+              <span>Mensagens</span> 
+            </span>
+         </button>
+         <button> 
+            <span>
+               <i class="material-symbols-outlined">Person</i>
+               <span>Perfil</span> 
+            </span>
+         </button>
+         <button> 
+            <span class="config-button">
+               <i class="material-symbols-outlined">Settings</i>
+               <span>Configurações</span>
+            </span>
+         </button>
+      </nav>
+   </aside>
 
-   <main class="master">
-      <h1>Home</h1>
-     <form class="post">
-         <textarea name="tweet" id="tweet" cols="30" rows="10" placeholder="What's happening?"></textarea>
-         <button type="submit">Tweet</button>
-     </form>
 
-     <h1 class="title-feed">Feed</h1>
-
-     <section class="feed">    
-      <div class="text-feed">
-         <div class="header">
-            <img src="/frontend/assets/Profile-Photo.png" alt="foto de perfil">
-            <div class="dateContainer">
-                  <h2 class="name-feed">Claubert Vinicius</h1>
-                  <p class="data">21/05/2023</p>
-               </div>
-         </div>
-            <div class="postContainer">
-               <img class="postImg" src="https://blockchainlogistics.files.wordpress.com/2021/09/chip.jpg?w=1088" alt="post">
-            </div>
-            <div class="postP">
-               <p>Assunto que será exibido no post, ou seja o tweet</p>
-            </div>
-         </div>
-         <div class="buttons">
-             <button><img src="/frontend/assets/React.svg" alt="curtir"></button>
-             <span>1 curtida</span>
-        </div>
-     </section>
-   </main>
-
-   <aside>
-      <h1 class="title-aside">Who to follow</h1>
-
-      <section class="followers">
-        <img src="/frontend/assets/Profile-Photo.png" alt="foto">
-        <h2>Claubert Vinicius</h2>
-        <button>Follow</button>
+   <main>
+      <section class="input">
+         <h1>Home</h1>
       </section>
-     </aside>
-    
+   </main>
 </body>
 </html>
